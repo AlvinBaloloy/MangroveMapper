@@ -5,8 +5,6 @@ Explore mangrove extent from 2019 onward across global mangrove forests using th
 
 ---
 
-## 🔗 Access the Tool via github   
-👉 (https://alvinbaloloy.github.io/MangroveMapper/)
 
 ## 🔗 Access the Tool via Google Earth Engine (Recommended) 
 👉 (https://ee-abbaloloy.projects.earthengine.app/view/mvi)
