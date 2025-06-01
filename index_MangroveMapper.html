@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mangrove Vegetation Index (MVI) Mapper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f8f9;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      background-color: #025939;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #025939;
+    }
+    code {
+      background-color: #e0e0e0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mangrove Vegetation Index (MVI) Mapper</h1>
+    <p>🌍 Map Mangroves from 2019–Present)</p>
+  </header>
+
+  <section>
+    <h2>🔗 Access the Tool</h2>
+    <p>
+      Explore global mangrove extent using the Mangrove Vegetation Index (MVI) tool powered by Google Earth Engine.
+    </p>
+  
+     <strong>If you want to run directly in GEE (Recommended), visit:</strong> https://ee-abbaloloy.projects.earthengine.app/view/mvi
+    </p>
+
+
+
+    <iframe src="https://ee-abbaloloy.projects.earthengine.app/view/mvi"></iframe>
+
+    <h2>🧪 About the Mangrove Vegetation Index (MVI)</h2>
+    <p>
+      The Mangrove Vegetation Index (MVI) uses three Sentinel-2 bands to distinguish mangrove forests from terrestrial vegetation based on greenness and moisture.
+    </p>
+    <p><strong>Formula:</strong></p>
+    <pre><code>MVI = |NIR – Green| / |SWIR – Green|</code></pre>
+    <p><strong>Where:</strong></p>
+    <ul>
+      <li><strong>NIR</strong> = Near Infrared (Band 8)</li>
+      <li><strong>Green</strong> = Visible Green (Band 3)</li>
+      <li><strong>SWIR</strong> = Shortwave Infrared (Band 11)</li>
+    </ul>
+
+    <h2>🌿 How It Works</h2>
+    <ul>
+      <li><code>|NIR – Green|</code> captures greenness contrast between mangroves and terrestrial vegetation.</li>
+      <li><code>|SWIR – Green|</code> represents moisture unique to mangroves, without using tidal indices.</li>
+      <li>Higher MVI = higher probability of mangrove classification.</li>
+    </ul>
+
+    <h2>🌍 Applications</h2>
+    <ul>
+      <li>Global mangrove extent mapping</li>
+      <li>Change detection (2019–present)</li>
+      <li>Conservation planning</li>
+      <li>Coastal resource management</li>
+    </ul>
+    <p>Used by: FAO, The Nature Conservancy, and academic institutions.</p>
+
+    <h2>📚 Cite As</h2>
+    <p>
+      Baloloy, A.B., Blanco, A.C., Sta. Ana, R.R.C., Nadaoka, K. (2020).<br>
+      <em>Development and application of a new mangrove vegetation index (MVI) for rapid and accurate mangrove mapping.</em><br>
+      <strong>ISPRS Journal of Photogrammetry and Remote Sensing</strong>, 166, 95–117.<br>
+      
+
+    <h2>👨‍💻 Developer</h2>
+    <p><strong>Alvin B. Baloloy</strong><br></p>
+  </section>
+</body>
+</html>
